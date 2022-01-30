@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="friendImage" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/account_icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="friendNameLabel" text="Firstname Lastname" />
+   </children>
+</VBox>

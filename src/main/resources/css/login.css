@@ -1,0 +1,62 @@
+@import url('base.css');
+
+.login-background {
+    -fx-background-color: -tertiary-color;
+    -fx-background-radius: 5;
+}
+
+.button {
+    -fx-text-fill: -accent-color;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(-tertiary-color, -quaternary-color);
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+.button:hover {
+    -fx-text-fill: -accent-text;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: -accent-color;
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+.button:pressed {
+    -fx-text-fill: -accent-text;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-accent-color, -10%);
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+#loginText {
+    -fx-font-family: "HoloLens MDL2 Assets";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0a0a0a;
+}
+
+#userLoginText{
+    -fx-font-size: 25;
+    -fx-font-family: fantasy;
+    -fx-font-weight: bold;
+}
+
+#textResponse {
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

@@ -1,0 +1,56 @@
+@import url('base.css');
+
+.app-menu-background {
+    -fx-background-color: transparent;
+}
+
+#appMenuContent {
+    -fx-background-color: -quaternary-color;
+}
+
+.app-menu-title {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: -primary-text;
+    -fx-text-alignment: center;
+}
+
+.app-menu-buttons-background {
+    -fx-background-color: -primary-color;
+}
+
+.app-menu-button {
+    -fx-text-fill: -primary-text;
+    -fx-background-color: -primary-color;
+    -fx-background-radius: 0;
+    -fx-text-alignment: left;
+    -fx-padding: 10;
+}
+
+.app-menu-button-icon {
+    -fx-icon-color: -primary-text;
+    -fx-icon-size: 20;
+}
+
+.app-menu-button:hover {
+    -fx-text-fill: -primary-text;
+    -fx-background-color: derive(-primary-color, -10%);
+    -fx-background-radius: 0;
+    -fx-text-alignment: left;
+    -fx-padding: 10;
+}
+
+.app-menu-button:pressed {
+    -fx-text-fill: -primary-text;
+    -fx-background-color: derive(-primary-color, -20%);
+    -fx-background-radius: 0;
+    -fx-text-alignment: left;
+    -fx-padding: 10;
+}
+
+.app-menu-button:selected {
+    -fx-text-fill: -primary-text;
+    -fx-background-color: -accent-color;
+    -fx-background-radius: 0;
+    -fx-text-alignment: left;
+    -fx-padding: 10;
+}

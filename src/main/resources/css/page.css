@@ -1,0 +1,59 @@
+@import url('base.css');
+
+.page-login-background {
+    -fx-background-radius: 5 5 0 0;
+}
+
+.page-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.page-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.page-scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.page-scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+
+.button {
+    -fx-text-fill: -accent-color;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(-tertiary-color, -quaternary-color);
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+.button:hover {
+    -fx-text-fill: -accent-text;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: -accent-color;
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+.button:pressed {
+    -fx-text-fill: -accent-text;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-accent-color, -10%);
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}

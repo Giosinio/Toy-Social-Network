@@ -1,0 +1,33 @@
+.tag-bar {
+    -fx-alignment: center-left;
+}
+
+.tags {
+    -fx-vgap: 5;
+    -fx-hgap: 5;
+}
+
+.tag {
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-border-color: rgb(3,79,216);
+    -fx-border-radius: 30;
+    -fx-border-width: 2;
+    -fx-alignment: center-left;
+}
+
+.tag-text {
+    -fx-text-fill: rgb(3,79,216);
+    -fx-label-padding: 0 0 0 10;
+    -fx-wrap-text: true;
+}
+
+.tag-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(3,79,216);
+}
+
+.tag-field, .tag-field .arrow, .tag-field .arrow-button, .text-field{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}

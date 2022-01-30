@@ -1,0 +1,26 @@
+.root{
+    -fx-background-image: url(../images/login_background.jpg)
+}
+
+.button{
+    -fx-border-radius: 5px;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+#acceptButton{
+    -fx-background-color: #7AE582;
+}
+
+#deleteButton{
+    -fx-background-color: #EE6055;
+}
+
+#backButton{
+    /*-fx-background-color: #E4C5AF;*/
+}
+
+#frTableView{
+    /*-fx-background-color: #F49F0A;*/
+}

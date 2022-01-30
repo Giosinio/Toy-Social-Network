@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="about-root" stylesheets="@../css/about.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+   <VBox prefHeight="400.0" prefWidth="600.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox>
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="MAP 2021 - Extended Project: ToySocialNetwork" />
+                        <Label text="Developed by:">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="George Giosan">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Andrei Grigorescu">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <AnchorPane>
+                     <children>
+                        <VBox alignment="TOP_CENTER" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="bitbucketButton" minHeight="68.0" minWidth="68.0" mnemonicParsing="false" onAction="#onBitbucketButtonPressed" styleClass="bitbucket-button">
+                                 <graphic>
+                                    <FontIcon iconLiteral="fab-bitbucket" iconSize="50" styleClass="bitbucket-button" />
+                                 </graphic>
+                              </Button>
+                              <Label text="Bitbucket link" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Region VBox.vgrow="ALWAYS" />
+      <HBox alignment="CENTER_RIGHT" prefWidth="200.0" spacing="5.0">
+         <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <Button fx:id="backButton" cancelButton="true" mnemonicParsing="false" onAction="#onBackButtonPressed" text="Back" />
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </padding>
+      </HBox>
+   </VBox>
+   <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="cs-logo" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+      <image>
+         <Image url="@../images/cs-logo.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

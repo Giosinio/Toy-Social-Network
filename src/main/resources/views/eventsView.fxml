@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="mainPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@../css/events.css" styleClass="sub-window-root" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventsController">
+    <top>
+        <HBox alignment="CENTER" spacing="50.0">
+            <Button onAction="#onNewEventButtonClicked" text="New event" />
+            <Button onAction="#onDiscoverButtonClicked" text="Discover" />
+            <Button onAction="#onMyEventsButtonClicked" text="My Events" />
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+        </HBox>
+    </top>
+</BorderPane>

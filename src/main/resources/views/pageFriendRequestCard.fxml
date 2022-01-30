@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<HBox alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: white;" styleClass="friend-request-card" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/account_icon.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="4.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox>
+         <children>
+            <Label text="From">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="friendRequestName" text="Firstname Lastname" />
+            <Label text="Sent on">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="friendRequestDate" text="date" />
+         </children>
+      </VBox>
+      <Region HBox.hgrow="ALWAYS" />
+      <VBox alignment="TOP_CENTER" spacing="10.0" HBox.hgrow="NEVER">
+         <children>
+            <Button fx:id="friendRequestAccept" mnemonicParsing="false" style="-fx-background-color: green;">
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="far-check-circle" />
+               </graphic>
+            </Button>
+            <Button fx:id="friendRequestReject" mnemonicParsing="false" style="-fx-background-color: red;">
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="far-times-circle" />
+               </graphic>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

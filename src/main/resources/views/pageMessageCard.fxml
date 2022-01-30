@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox style="-fx-background-color: white;" styleClass="message-card" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/account_icon.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <GridPane hgap="10.0" HBox.hgrow="SOMETIMES">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="From" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageFrom" text="Firstname Lastname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Subject" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageSubject" text="subject" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="To" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageTo" text="Firstname Lastname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Sent">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageDate" text="date" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" minHeight="70.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <content>
+            <TextFlow style="-fx-background-color: rgb(240,240,240);">
+               <children>
+                  <Text id="message-text" fx:id="messageText" strokeType="OUTSIDE" strokeWidth="0.0" text=" Vestibulum iaculis nulla imperdiet auctor molestie. Nunc ut mollis eros. Nunc auctor erat et justo dapibus, eget faucibus ipsum efficitur. Maecenas pretium magna sed bibendum placerat. Proin faucibus placerat pulvinar. Maecenas eleifend mollis nulla, ultrices molestie eros suscipit sodales. Phasellus tempus eleifend ligula, a congue diam imperdiet at. Nam semper, ex a finibus dignissim, nisl diam ultrices elit, in sodales nibh nisl eget lacus. Ut semper bibendum pulvinar. Sed mollis ipsum purus, vitae congue augue aliquam ac. Mauris eget erat varius, congue erat vel, molestie odio. Nam tempus quam sed sem venenatis, ut hendrerit tortor fermentum. Quisque dignissim vulputate mattis.Vivamus at interdum tellus. Pellentesque lacinia consequat scelerisque. Integer nec volutpat nisl, et facilisis dui. Pellentesque non mauris erat. Sed faucibus ac sem vitae pellentesque. Quisque rutrum mi eget justo viverra, non convallis leo luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam tincidunt lectus et sapien fermentum tincidunt. Mauris eu faucibus metus, eu convallis nisi. Quisque pellentesque pulvinar congue. Sed eget dolor eget turpis bibendum interdum. Vivamus lacus metus, blandit in tempus rutrum, porttitor non eros. Praesent ac libero lacus. Integer vehicula, ex in ultricies scelerisque, orci eros sollicitudin elit, sit amet eleifend lectus neque maximus lectus. " />
+               </children>
+            </TextFlow>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

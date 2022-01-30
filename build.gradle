@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+}
+
+group 'ro.ubbcluj.map'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 16
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.controlsfx:controlsfx:11.1.0'
+    implementation 'org.kordamp.ikonli:ikonli-javafx:12.3.0'
+    implementation 'org.kordamp.ikonli:ikonli-materialdesign2-pack:12.3.0'
+    implementation 'org.kordamp.ikonli:ikonli-fontawesome5-pack:12.3.0'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
+    implementation group: 'org.apache.pdfbox', name: 'pdfbox', version: '3.0.0-RC1'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls' , 'javafx.fxml']
+}
+
+test {
+    useJUnitPlatform()
+}

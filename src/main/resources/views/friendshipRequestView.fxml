@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="245.0" styleClass="sub-window-root" stylesheets="@../css/friendship_requests.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendshipRequestController">
+    <TableView fx:id="frTableView" maxHeight="380.0" maxWidth="225.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="225.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="5.0">
+        <placeholder>
+            <Label />
+        </placeholder>
+        <columns>
+            <TableColumn fx:id="fromTableColumn" prefWidth="75.0" text="From" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="75.0" text="Sent at" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="75.0" text="Status" />
+        </columns>
+    </TableView>
+    <VBox alignment="TOP_RIGHT" spacing="10" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <HBox spacing="5.0">
+            <RadioButton fx:id="pendingRadioButton" text="Pending" />
+            <RadioButton fx:id="sentRadioButton" text="Sent" />
+        </HBox>
+        <HBox alignment="TOP_RIGHT" spacing="5.0">
+            <Button fx:id="acceptButton" onAction="#handleAcceptFriendshipRequest" text="Accept" />
+            <Button fx:id="deleteButton" onAction="#handleDeleteFriendshipRequest" text="Delete" />
+            <Button fx:id="cancelButton" onAction="#handleCancelFriendshipRequest" text="Cancel" visible="false" />
+        </HBox>
+    </VBox>
+    <Button fx:id="addFriendButton" onAction="#onAddFriendButtonClicked" text="Add friend" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+</AnchorPane>

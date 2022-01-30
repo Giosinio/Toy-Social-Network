@@ -1,0 +1,87 @@
+@import url('base.css');
+
+* {
+
+}
+
+.about-root {
+    -fx-background-color: -secondary-color;
+}
+
+.about-root .label {
+    -fx-text-fill: -primary-text;
+}
+
+.button {
+     -fx-text-fill: -accent-color;
+     -fx-font-family: "Arial Narrow";
+     -fx-font-weight: bold;
+     -fx-background-color: linear-gradient(-tertiary-color, -quaternary-color);
+     -fx-background-radius: 10;
+     -fx-border-color: -accent-color;
+     -fx-border-width: 1;
+     -fx-border-radius: 10;
+     /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+ }
+
+.button:hover {
+    -fx-text-fill: -accent-text;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: -accent-color;
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+.button:pressed {
+    -fx-text-fill: -accent-text;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-accent-color, -10%);
+    -fx-background-radius: 10;
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+.button {
+    -fx-background-color: -primary-color;
+}
+
+.bitbucket-button {
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+}
+
+.bitbucket-button .ikonli-font-icon {
+    -fx-icon-color: -accent-color;
+}
+
+.bitbucket-button:hover {
+    -fx-border-color: -accent-color;
+    -fx-border-width: 1;
+    -fx-background-color: -accent-color;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.bitbucket-button:hover .ikonli-font-icon {
+    -fx-icon-color: -highlight-color;
+}
+
+.bitbucket-button:pressed {
+    -fx-border-color: derive(-accent-color, -10%);
+    -fx-border-width: 1;
+    -fx-background-color: derive(-accent-color, -10%);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.bitbucket-button:pressed .ikonli-font-icon {
+    -fx-icon-color: derive(-highlight-color, -10%);
+}

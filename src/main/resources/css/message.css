@@ -1,0 +1,167 @@
+#menuPane{
+    -fx-font-family: "Arial";
+    -fx-background-image: url(../images/menu_background.jpg);
+}
+
+#newMailButton{
+    -fx-font-weight: bold;
+    -fx-font-size: 17;
+    -fx-background-color: #42CAFD;
+}
+
+#inboxButton{
+    -fx-font-weight: bold;
+    -fx-font-size: 17;
+    -fx-background-color: #42CAFD;
+}
+
+#sentMailsButton{
+    -fx-font-weight: bold;
+    -fx-font-size: 17;
+    -fx-background-color: #42CAFD;
+}
+
+#backButton{
+    -fx-font-weight: bold;
+    -fx-font-size: 17;
+    -fx-background-color: #42CAFD;
+}
+
+#mailVBox{
+    -fx-background-color: white;
+}
+
+
+#accountLabel{
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#emailLabel{
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#emailAddress{
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#menuLabel{
+    -fx-font-size: 20;
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+#replyButton{
+    -fx-background-image: url(../images/reply_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#replyAllButton{
+    -fx-background-image: url(../images/reply_all_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#discardButton{
+    -fx-background-image: url(../images/bin_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-color: #EE6055;
+}
+
+#discardReplyButton{
+    -fx-background-image: url(../images/bin_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-color: #EE6055;
+}
+
+#sendButton{
+    -fx-background-image: url(../images/send_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-color: #7AE582;
+}
+
+#sendReplyButton{
+    -fx-background-image: url(../images/send_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-color: #7AE582;
+}
+
+#previousPageButton{
+    -fx-background-image: url(../images/previous_page_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+
+#previousPageButton:disabled{
+    -fx-cursor: not-allowed;
+}
+
+#nextPageButton{
+    -fx-background-image: url(../images/next_page_icon.png);
+    -fx-background-size: 25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+
+#nextPageButton:disabled{
+    -fx-cursor: not-allowed;
+}
+
+#newMailText{
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#newMailReplyText{
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#noPages:disabled{
+    -fx-font-color: black;
+    -fx-background-color: white;
+}
+
+.root{
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
